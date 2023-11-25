@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { PlayerEnum } from '../../enums/player-enum';
 
 @Component({
   selector: 'app-game-over',
@@ -9,5 +10,6 @@ export class GameOverComponent {
   @Input() gameOver: boolean;
   @Input() draw: boolean;
   @Input() local: boolean;
-
+  @Input() winner = PlayerEnum.Player1;
+  @Output() playAgain = new EventEmitter();
 }
