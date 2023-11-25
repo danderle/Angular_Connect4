@@ -1,0 +1,17 @@
+<div class="page-container">
+    <div class="current-player-container">
+        <p>Player 1</p>
+        <span class="player1"></span>
+    </div>
+    <div class="game-board-container">
+        <span class="{{chip}}" *ngFor="let chip of chipArray"></span>
+    </div>
+</div>
+
+<app-game-over *ngIf="gameOver || draw"
+[gameOver]="gameOver"
+[draw]="draw"
+[local]="true"
+>
+
+</app-game-over>

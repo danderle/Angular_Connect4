@@ -1,0 +1,12 @@
+<div class="overlay"></div>
+<div class="game-over-container">
+    <ng-container *ngIf="gameOver">
+        <h1>Game over</h1>
+        <h1>Player 1 won</h1>
+    </ng-container>
+    <h1 *ngIf="draw">Draw</h1>
+    <div class="button-container">
+        <a>Main menu</a>
+        <a *ngIf="local">Play again</a>
+    </div>
+</div>

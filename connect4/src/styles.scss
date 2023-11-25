@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --clr-reallyDarkBlue: #27005d;
+    --clr-darkBlue: #01377d;
+    --clr-lightBlue: #97e7f5;
+    --clr-darkGreen: #26b170;
+    --clr-pink: #b5179e;
+}
+
+*{
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html,
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--clr-lightBlue);
+    background-color: var(--clr-reallyDarkBlue);
+}
+
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+a,
+button{
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: var(--clr-darkBlue);
+    color: var(--clr-lightBlue);
+    border: 3px solid var(--clr-lightBlue);
+    border-radius: 0.5rem;
+    padding: 0.5rem 2.5rem;
+    transition: background-color, smooth, 0.3s;
+    &:disabled{
+        opacity: 0.5;
+    }
+
+    &:not([disabled]):hover{
+        cursor: pointer;
+        background-color: var(--clr-lightBlue);
+        color: var(--clr-darkBlue);
+    }
+}
