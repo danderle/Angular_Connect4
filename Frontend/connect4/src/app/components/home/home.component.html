@@ -1,7 +1,7 @@
 <div class="page-container">
     <div class="welcome-container">
         <h1>Welcome to Connect 4</h1>
-        <p>0 Players online</p>
+        <p>{{ totalUsers$ | async }} Players online</p>
         <div class="button-container">
             <a routerLink="online">Play online</a>
             <a routerLink="local">Play locally</a>
